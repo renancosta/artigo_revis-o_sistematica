@@ -5,6 +5,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{comment}
 \usepackage{scalefnt}
+\usepackage{float}
 %\usepackage[brazilian]{babel}
 
 \sloppy
@@ -72,7 +73,7 @@ Apesar desse cenário, o desenvolvimento de sistemas de código aberto vem mudan
 %-------------------------------------------------------------------------------
 \section{Usabilidade}
 \label{sec:usabilidade}
-O termo usabilidade de modo geral pode ser escrito como a facilidade com a qual um equipamento ou programa pode ser usado. O termo a ser utilizado é descrito na ISO 25010 que define como uma medida pela qual um produto pode ser usado por usuários específicos para alcançar metas específicas com eficácia, eficiência e satisfação em um contexto específico de uso.
+O termo usabilidade de modo geral pode ser escrito como a facilidade com a qual um equipamento ou programa pode ser usado. O termo a ser utilizado é descrito na ISO 25010 que define como uma medida pela qual um produto pode ser usado por usuários específicos para alcançar metas específicas com eficácia, eficiência e satisfação em um contexto específico de uso~\cite{}.
 
 %
 A usabilidade não é uma qualidade intrínseca de um sistema, ela é dependente de um acordo entre as características de sua interface e as características de seus usuários na busca de determinados objetivos e situação de uso [Cybis, 2010]. Uma interface que pode ser considerada satisfatória para determinado grupo de usuários pode ser inviabilizada por outros, e estes podem ser usuários experientes ou novatos. E a percepção pode ser diferente dependendo do amibiente de hardware, com desempenho alto ou baixo. Pode-se dizer então que a usabilidade é um acordo entre interface, usuário e ambiente.
@@ -152,28 +153,115 @@ Na terceira etapa de seleção das publicações, o resumo (abstract) de cada pu
 \end{figure}
 
 %
-Na quarta etapa de seleção das publicações, foi realizada a leitura completa dos artigos aplicando o critério de seleção CS3 para verificar a adequação junto a hipótese levantada.
+Durante a obtenção das publicações 3 foram eliminados devido a falta de acesso e um por não conter seu desenvolvimento apenas breve descrição e resumo. Na quarta etapa de seleção das publicações com os 7 artigos remanecentes, foi realizada a leitura completa dos artigos aplicando o critério de seleção CS3 para verificar a adequação junto a questão levantada.
+
 
 \subsection{Análise dos resultados da pesquisa}
-Através da análise das técnicas encontradas é possível evidenciar as seguintes:
+As publicações selecionadas levaram a seleção de 8 técnicas de usabilidade utilizadas na comunidade ágil que podem ser aplicadas na comunidade de software livre. Essas técnicas foram propostas visando os princípios e práticas ágeis e algumas validadas em projetos ágeis.
 
 %
-Aplicação do próprio processo de DCU (Design Centrado no Usuário) para levantamento dos usuários e do contexto de uso da metodologia. Os usuários do processo são membros de equipes de software livre, que desejam inserir práticas de usabilidade no processo de desenvolvimento. O contexto de uso são sistemas distribuídos geograficamente, com pessoas trabalhando colaborativamente. Os métodos podem ser aplicados tanto para o início de novos projetos, que tenham como usuários, pessoas não acostumadas a sistemas livres ou mesmo para a melhoria de sistemas existentes, com respeito à usabilidade.
+Santos e Kon (2012) propõe a aplicação do próprio processo de DCU (Design Centrado no Usuário) para levantamento dos usuários e do contexto de uso da metodologia. Os usuários do processo são membros de equipes de software livre, que desejam inserir práticas de usabilidade no processo de desenvolvimento. O contexto de uso são sistemas distribuídos geograficamente, com pessoas trabalhando colaborativamente. Os métodos podem ser aplicados tanto para o início de novos projetos, que tenham como usuários, pessoas não acostumadas a sistemas livres ou mesmo para a melhoria de sistemas existentes, com respeito à usabilidade.~\cite{}%Aplicação de metodologias ...
 
 %
-Aplicação de definição de histórias de usuário de usabilidade dirigidas pela decisão do responsável por design realizando a prototipação dessas histórias e depois sendo validadas através de testes de usabilidade conforme figura abaixo.
+Já Lee, Judge e McCrickard (2011) defendem a aplicação de definição de histórias de usuário de usabilidade dirigidas pela decisão do responsável por design realizando a prototipação dessas histórias e depois sendo validadas através de testes de usabilidade conforme Figura \ref{fig:figuraCDR}~\cite{}.
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=0.5\textwidth]{figure/figuraCDR.png}
+    \caption{Ciclo de atividades de usabilidade}
+    \label{fig:figuraCDR}
+  \end{center}
+\end{figure}
 
 %
-As atividades de usabilidade seguem o modelo de ciclo de vida das outras atividades dentro do desenvolvimento ágil com a diferença que o ciclo de usabilidade tem sua iteração primeiro que as outras atividades de desenvolvimento conforme figura abaixo:
+As atividades de usabilidade seguem o modelo de ciclo de vida das outras atividades dentro do desenvolvimento ágil com a diferença que o ciclo de usabilidade tem sua iteração primeiro que as outras atividades de desenvolvimento conforme Figura \ref{fig:figuraCDR2}:
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=0.5\textwidth]{figure/figuraCDR2.png}
+    \caption{Ciclo das tarefas de usabilidade x desenvolvimento}
+    \label{fig:figuraCDR2}
+  \end{center}
+\end{figure}
 
 %
-Aplicação das técnicas de usabilidade de acordo com as fases do DCU, conforme a descrição das técnicas de usabilidade das comunidades de métodos ágeis e de software livre. Para a fase do DCU Criar soluções de design, não foram identificadas propostas de adaptações, sendo portanto, descritas propostas para as fases: Identificar necessidades para design centrado em humano, Especificar contexto de uso, Especificar requisitos e Avaliar Designs conforme figura abaixo.
+Santos (2012) em uma nova pesquisa aplicada propós a aplicação das técnicas de usabilidade de acordo com as fases do DCU, conforme a descrição das técnicas de usabilidade das comunidades de métodos ágeis e de software livre. Para a fase do DCU Criar soluções de design, não foram identificadas propostas de adaptações, sendo portanto, descritas propostas para as fases: Identificar necessidades para design centrado em humano, Especificar contexto de uso, Especificar requisitos e Avaliar Designs conforme Figura \ref{fig:figuraDCU}.
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=0.7\textwidth]{figure/figuraDCU.png}
+    \caption{Técnicas de usabilidade baseado no DCU}
+    \label{fig:figuraDCU}
+  \end{center}
+\end{figure}
+
+%
+Moreno e Yagüe (2012) trás em seu trabalho a inserção da usabilidade por meio da criação de User Stories de usabilidade que denominam de \textit{Usability Stories}. Tendo que especificar os recursos funcionais de usabilidade que serão utilizados no projeto, o artigo trás um tabela que é necessária para definir as características dessa funcionalidade.
+
+\begin{table}[h]
+\begin{tabular}{|l|l|}
+\hline
+Status do Sistema                                                      & Para informar os usuários sobre a situação interna do sistema                                                                                                                                                \\ \hline
+Aviso                                                                  & \begin{tabular}[c]{@{}c@{}}Para informar os usuários de qualquer ação com conseqüências\\  importantes\end{tabular}                                                                                          \\ \hline
+Longa ação Feedback                                                    & \begin{tabular}[c]{@{}c@{}}Para informar aos usuários que o sistema está processando\\  uma ação que vai demorar algum tempo para completar\end{tabular}            \\ \hline
+Desfazer global                                                        & Para desfazer as ações do sistema em vários níveis                                                                                                                                                           \\ \hline
+Abortar Operação                                                       & Para cancelar a execução de uma ação ou toda a aplicação                                                                                                                                                     \\ \hline
+Abortar comando                                                        & Para cancelar a execução de uma tarefa em andamento                                                                                                                                                          \\ \hline
+Voltar                                                                 & \begin{tabular}[c]{@{}c@{}}Para voltar a um estado particular em uma seqüência de \\ execução de comando\end{tabular}                                                                                        \\ \hline
+\begin{tabular}[c]{@{}c@{}}Entrada de texto\\ estruturada\end{tabular} & \begin{tabular}[c]{@{}c@{}}Para ajudar a prevenir o usuário de cometer erros de \\ entrada de dados\end{tabular}                                                                                             \\ \hline
+\begin{tabular}[c]{@{}c@{}}Execução\\ Passo-a-Passo\end{tabular}       & \begin{tabular}[c]{@{}c@{}}Para ajudar os usuários a realizar tarefas que requerem \\ diferentes passos com a entrada do usuário e tal entrada correta\end{tabular} \\ \hline
+Preferências                                                           & \begin{tabular}[c]{@{}c@{}}Para gravar as opções de cada usuário para usar as \\ funções do sistema\end{tabular}                                                                                             \\ \hline
+Favoritos                                                              & Para gravar determinados locais de interesse para o usuário                                                                                                                                                  \\ \hline
+Ajuda Multinível                                                       & Para fornecer diferentes níveis de ajuda para usuários diferentes                                                                                                                                            \\ \hline
+\end{tabular}
+\caption{Mecanismos de usabilidade}
+\label{tabela-mec-usabilidade}
+\end{table}
+
+Associado a essas características é definido três maneiras pelas quais a incorporação de usabilidade influencia as histórias de usuário.
+\begin{enumerate}
+\item A adição de novas histórias para representar requisitos diretamente derivados usabilidade.
+\item Adição ou modificação de tarefas em histórias de usuários existentes. Isto significa que algumas ações decorrentes de limitações de usabilidade devem ser realizadas por um usuário existente na história. Esta tarefa pode ser tão simples ou detalhados, conforme necessário.
+\item Adição ou modificação de critérios de aceitação. Estes critérios de aceitação aparecem porque a funcionalidade da história de usuário precisa incluir algumas ações específicas para modificar o ambiente operacional.
+\end{enumerate}
+
+Com isso os autores realizam um mapeamento entre os mecanismos de usabilidade e as ações a semrem tomadas finalizando a proposta de como a usabilidade deve ser abordada por equipes ágeis.
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|l|}
+\hline
+                                                                       & \begin{tabular}[c]{@{}c@{}}Nova\\ Tarefa\end{tabular} & \begin{tabular}[c]{@{}c@{}}Modificar\\ Tarefa\end{tabular} & \begin{tabular}[c]{@{}c@{}}Novo\\ Critério de\\Aceitação\end{tabular} & \begin{tabular}[c]{@{}c@{}}Modificar\\ Critério de\\Aceitação\end{tabular} & \begin{tabular}[c]{@{}c@{}}Nova\\ História de \\ Usabilidade\end{tabular} & \begin{tabular}[c]{@{}c@{}}Nova\\ História\\ de Usuário\end{tabular} \\ \hline
+Status do Sistema                                                      &                                                       & X                                                          & X                                                                      & X                                                                           & X                                                                                                                                                           &                                                                      \\ \hline
+Aviso                                                                  & X                                                     &                                                            & X                                                                      & X                                                                           & X                                                                                                                                                           &                                                                      \\ \hline
+Longa ação                                                             &                                                       & X                                                          & X                                                                      &                                                                             &                                                                                                                                                             & X                                                                    \\ \hline
+Abortar Operação                                                       &                                                       & X                                                          & X                                                                      &                                                                             &                                                                                                                                                             &                                                                      \\ \hline
+Abortar comando                                                        & X                                                     & X                                                          & X                                                                      &                                                                             &                                                                                                                                                             &                                                                      \\ \hline
+Voltar                                                                 & X                                                     & X                                                          & X                                                                      &                                                                             &                                                                                                                                                             &                                                                      \\ \hline
+\begin{tabular}[c]{@{}c@{}}Entrada de texto\\ estruturada\end{tabular} &                                                       & X                                                          & X                                                                      &                                                                             &                                                                                                                                                             &                                                                      \\ \hline
+\begin{tabular}[c]{@{}c@{}}Execução\\ Passo-a-Passo\end{tabular}       & X                                                     &                                                            & X                                                                      & X                                                                           &                                                                                                                                                             &                                                                      \\ \hline
+Preferências                                                           &                                                       &                                                            &                                                                        &                                                                             &                                                                                                                                                             & X                                                                    \\ \hline
+Favoritos                                                              &                                                       & X                                                          & X                                                                      &                                                                             & X                                                                                                                                                           &                                                                      \\ \hline
+Ajuda Multinível                                                       &                                                       & X                                                          & X                                                                      &                                                                             & X                                                                                                                                                           &                                                                      \\ \hline
+\end{tabular}
+\caption{Mapeamento entre os mecânismos de usabilidade e ações}
+\label{tabela-map}
+\end{table}
+
+Hussain, Slany e Holzinger (2009) não evidenciam proposta de técnicas de usabilidade, eles realizam uma busca sobre o que está sendo utilizado nas comunidades ágeis e trazem como resultados:
+\begin{itemize}
+\item Técnicas de IHC (Iteração Humano Computador).As técnicas mais utilizadas são de baixa fidelidade de protótipos, seguido de projetos conceituais, observa-se estudos adicionais dos usuários, avaliações de especialistas de usabilidade, estudos de campo, testes rápidos iterativo e testes de usabilidade em laboratório, respectivamente.
+\item Técnicas de IHC utilizadas com menor frequência. Contém investigação contextual, os testes não-formais de usabilidade (em pessoa), design participativo, especificações de interface do usuário completas, de alta fidelidade de protótipos, e inquérito model-driven.
+\end{itemize}
+
+Como conclusão observam que o uso de protótipos de baixa fidelidade, avaliações de especialistas de usabilidade, e teste rápido iterativo é facilmente alocado dentro das iterações rápidas de métodos ágeis~\cite{}. 
+
+Ferreira e Biddle (2007) defendem o foco em design de iteração ágil antes do início do desenvolvimento de software dentro da iteração. Para eles a inserção de técnicas de design no início do ciclo de desenvolvimento podem trazer diversos benefícios sem atrapalhar ou prejudicar a equipe. Para validar essa téoria utilizaram de entrevistas com designers de interação e desenvolvimento de software em várias equipes ágeis e acompanharam a aplicação desta dentro do projeto, em um contexto de 3 projetos de desenvolvimento ágil ~\cite{}. 
 
 %
 Algumas técnicas não muito aceitas pela comunidade de software livre devido a motivação partir de razões financeiras, mas exemplificadas:
 
 %
-Oferecimento de pagamento de US\$15,00 para pessoas que se interessem em testar a usabilidade de um sistema, o qual é fornecido por empresas que desejam obter um feedback sobre a usabilidade de seus projetos. Essa estratégia também difere das técnicas abordadas, pois os usuários envolvidos são motivados por razões financeiras e não filosóficas como no caso de sistemas livres e também por ser mais focada em avaliações de usabilidade e não em desenvolvimento com usabilidade.
+Oferecimento de pagamento de US\$15,00 para pessoas que se interessem em testar a usabilidade de um sistema, o qual é fornecido por empresas que desejam obter um feedback sobre a usabilidade de seus projetos. Essa estratégia também difere das técnicas abordadas, pois os usuários envolvidos são motivados por razões financeiras e não filosóficas como no caso de sistemas livres e também por ser mais focada em avaliações de usabilidade e não em desenvolvimento com usabilidade.~\cite{}%Lee
 %%----------------------------------------------------------------------------%%
 \section{Considerações finais}
 \label{sec:con_final}
